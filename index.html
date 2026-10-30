@@ -3,115 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LH Multi Services | Facility and Manpower Services, Philippines</title>
-<meta name="description" content="LH Multi Services provides janitorial, security, maintenance and manpower services to offices, malls and factories across Metro Manila. Demo company for Hirebilis.">
+<title>LH Multi Services | Home and Property Services, Metro Manila</title>
+<meta name="description" content="Landscaping, pest control, aircon, plumbing, cleaning and repairs for homes, subdivisions and small offices in east Metro Manila. Demo company for Hirebilis.">
 <meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
 <style>
-:root{--ink:#0f1d2b;--muted:#566474;--bg:#f7f8f6;--card:#fff;--line:#e2e6e3;--brand:#0d6b4f;--brand-ink:#08442f;--sun:#f2b632}
-@media (prefers-color-scheme:dark){:root{--ink:#e8eee9;--muted:#a3b0a8;--bg:#101614;--card:#18201d;--line:#26302c;--brand:#3fbf8f;--brand-ink:#9fe3c7}}
+:root{--ink:#1e1e1e;--soft:#4a4842;--bg:#f4f1ea;--card:#ffffff;--line:#e3ddd0;--accent:#c8462b;--leaf:#2f6b3a}
 *{box-sizing:border-box}
-body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+body{margin:0;font-family:Archivo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
 a{color:inherit}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid var(--line);background:var(--card)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;letter-spacing:-.01em}
-.mark{width:34px;height:34px;border-radius:8px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:15px}
-.nav nav{display:flex;gap:18px;font-size:15px}
-.nav nav a{text-decoration:none;color:var(--muted)}
-.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:8px}
-.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
-.hero{padding:72px 0 56px}
-.eyebrow{color:var(--brand);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
-h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:10px 0 16px;letter-spacing:-.02em;max-width:16ch}
-.lead{font-size:18px;color:var(--muted);max-width:56ch;margin:0 0 28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-section{padding:48px 0}
-h2{font-size:28px;margin:0 0 8px;letter-spacing:-.01em}
-.sub{color:var(--muted);margin:0 0 28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
-.card h3{margin:0 0 6px;font-size:18px}
-.card p{margin:0;color:var(--muted);font-size:15px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;text-align:center}
-.stat b{display:block;font-size:32px;color:var(--brand)}
-.stat span{color:var(--muted);font-size:14px}
-.join{background:var(--brand);color:#fff;border-radius:16px;padding:36px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
-.join h2{color:#fff}
-.join p{margin:0;opacity:.9;max-width:52ch}
-.join .btn{background:var(--sun);color:#1b1500}
-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
-@media (max-width:640px){.nav nav a:not(.keep){display:none}.hero{padding:48px 0 36px}.join{padding:24px}}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;padding-top:20px;padding-bottom:20px}
+.brand{font-weight:800;font-size:20px;letter-spacing:.02em;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:20px;font-size:15px}
+nav a{text-decoration:none}
+nav a.cta{font-weight:600;border-bottom:2px solid var(--accent)}
+.hero{padding:36px 0 56px}
+h1{font-size:clamp(38px,7vw,64px);line-height:1.03;font-weight:800;margin:0 0 24px;max-width:16ch}
+.hero-row{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:28px}
+.lead{margin:0;font-size:19px;max-width:54ch;color:#3b3a36}
+.btn{display:inline-block;text-decoration:none;background:var(--ink);color:var(--bg);padding:15px 24px;font-weight:600}
+.btn.light{background:#fff;color:var(--ink)}
+.photo{height:340px;background:linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)),#cfd8c4;display:flex;align-items:center;justify-content:center;color:#55604c;font-size:15px}
+section{padding:56px 0}
+h2{font-size:34px;font-weight:800;margin:0 0 8px}
+.sub{margin:0 0 28px;color:var(--soft)}
+.white{background:var(--card)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 40px}
+.svc{display:flex;flex-direction:column;gap:6px}
+.svc .tag{font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.08em}
+.svc b{font-size:21px;font-weight:800}
+.svc span:last-child{color:var(--soft)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.step{border-top:3px solid var(--ink);padding-top:14px}
+.step b{display:block;margin-bottom:4px}
+.step span{color:var(--soft)}
+.areas{display:flex;flex-wrap:wrap;gap:10px}
+.areas span{background:var(--card);border:1px solid var(--line);padding:8px 14px;font-weight:600}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.pack{background:var(--card);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:8px}
+.pack b{font-size:20px}
+.pack .price{font-weight:800;color:var(--leaf)}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.review{border-left:0;background:var(--card);border:1px solid var(--line);padding:22px;color:var(--soft)}
+.review b{display:block;color:var(--ink);margin-top:10px}
+.band{background:var(--accent);color:#fff}
+.band .wrap{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;padding-top:40px;padding-bottom:40px}
+.band strong{font-size:26px;font-weight:800}
+.contact{display:flex;flex-wrap:wrap;gap:40px}
+.contact form{flex:1 1 360px;background:var(--card);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:14px}
+.contact label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+.contact input,.contact select,.contact textarea{font:inherit;padding:11px;border:1px solid #bfb8a8;background:#fff}
+.contact button{font:inherit;font-weight:700;background:var(--ink);color:var(--bg);border:0;padding:14px;cursor:pointer}
+.contact .info{flex:1 1 260px;display:flex;flex-direction:column;gap:8px;color:var(--soft)}
+.contact .info b{color:var(--ink)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;padding-top:28px;padding-bottom:28px;font-size:14px;color:var(--soft);border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
 <header>
-  <div class="wrap nav">
-    <a class="logo" href="/"><span class="mark">LH</span>LH Multi Services</a>
+  <div class="wrap">
+    <a class="brand" href="/">LH MULTI SERVICES</a>
     <nav>
       <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a class="keep" href="https://careers.lhmultiservices.com/">Careers</a>
+      <a href="#how">How it works</a>
+      <a href="#packages">Packages</a>
+      <a href="https://careers.lhmultiservices.com/">Careers</a>
+      <a class="cta" href="#book">Book a visit</a>
     </nav>
   </div>
 </header>
 
 <main>
   <div class="wrap hero">
-    <div class="eyebrow">Facility and manpower services</div>
-    <h1>Clean, safe and running, every shift.</h1>
-    <p class="lead">LH Multi Services keeps offices, malls and factories across Metro Manila clean, secure and well maintained, with trained Filipino teams you can count on.</p>
-    <div class="cta">
-      <a class="btn" href="#contact">Request a quote</a>
-      <a class="btn alt" href="https://careers.lhmultiservices.com/">See open jobs</a>
+    <h1>One call for everything your property needs.</h1>
+    <div class="hero-row">
+      <p class="lead">Garden, pests, aircon, pipes, wiring, cleaning and repairs for homes, subdivisions, condos and small offices in east Metro Manila.</p>
+      <a class="btn" href="#book">Book a visit</a>
+    </div>
+    <div class="photo">[PHOTO: our crew trimming a garden]</div>
+  </div>
+
+  <section id="services" class="white">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="sub">Trained crews, our own tools, one invoice.</p>
+      <div class="grid">
+        <div class="svc"><span class="tag">OUTDOORS</span><b>Landscaping and garden care</b><span>Lawn mowing, hedge trimming, tree pruning, planting.</span></div>
+        <div class="svc"><span class="tag">PESTS</span><b>Pest control</b><span>Termites, rodents, cockroaches and general spraying.</span></div>
+        <div class="svc"><span class="tag">COOLING</span><b>Aircon cleaning and repair</b><span>Window and split type, cleaning, freon and repairs.</span></div>
+        <div class="svc"><span class="tag">FIX</span><b>Plumbing and electrical</b><span>Leaks, clogs, outlets, lighting and breakers.</span></div>
+        <div class="svc"><span class="tag">CLEAN</span><b>House and office cleaning</b><span>Deep clean, move-in and move-out cleaning.</span></div>
+        <div class="svc"><span class="tag">REFRESH</span><b>Painting and small renovation</b><span>Repainting, tiling, ceiling and carpentry work.</span></div>
+        <div class="svc"><span class="tag">WATER</span><b>Pool cleaning</b><span>Weekly cleaning, water balance, pump checks.</span></div>
+        <div class="svc"><span class="tag">ROOF</span><b>Roof and gutter cleaning</b><span>Leaves out before the rainy season.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="sub">No surprise charges.</p>
+      <div class="steps">
+        <div class="step"><b>1. Book</b><span>Tell us what needs doing by form, phone or Viber.</span></div>
+        <div class="step"><b>2. We visit</b><span>A supervisor checks the job and gives a fixed quote.</span></div>
+        <div class="step"><b>3. Job done, pay after</b><span>Pay when you are happy with the work.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white">
+    <div class="wrap">
+      <h2>Service areas</h2>
+      <p class="sub">Same week visits in:</p>
+      <div class="areas"><span>Pasig</span><span>Marikina</span><span>Quezon City</span><span>Antipolo</span><span>Cainta</span><span>Taytay</span></div>
+    </div>
+  </section>
+
+  <section id="packages">
+    <div class="wrap">
+      <h2>Packages</h2>
+      <p class="sub">Regular care at a set price.</p>
+      <div class="packs">
+        <div class="pack"><b>Monthly garden care</b><span>Two visits a month: mowing, trimming, clean-up.</span><span class="price">[PRICE] a month</span></div>
+        <div class="pack"><b>Quarterly pest control</b><span>Spraying and termite check every 3 months.</span><span class="price">[PRICE] a quarter</span></div>
+        <div class="pack"><b>Aircon care plan</b><span>Cleaning of all units twice a year.</span><span class="price">[PRICE] a year</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white">
+    <div class="wrap">
+      <h2>What clients say</h2>
+      <p class="sub">&nbsp;</p>
+      <div class="reviews">
+        <div class="review">[REVIEW]<b>[NAME], [AREA]</b></div>
+        <div class="review">[REVIEW]<b>[NAME], [AREA]</b></div>
+        <div class="review">[REVIEW]<b>[NAME], [AREA]</b></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap">
+      <strong>We are hiring gardeners, technicians and cleaners.</strong>
+      <a class="btn light" href="https://careers.lhmultiservices.com/">See open jobs</a>
     </div>
   </div>
 
-  <section id="services">
-    <div class="wrap">
-      <h2>What we do</h2>
-      <p class="sub">One partner for the people who keep your building working.</p>
-      <div class="grid">
-        <div class="card"><h3>Janitorial</h3><p>Daily cleaning, deep cleaning and sanitation for offices, malls and hospitals.</p></div>
-        <div class="card"><h3>Security</h3><p>Licensed guards, roving patrols and front desk officers, day and night.</p></div>
-        <div class="card"><h3>Building maintenance</h3><p>Electricians, aircon technicians and handymen on call or on site.</p></div>
-        <div class="card"><h3>Manpower supply</h3><p>Messengers, warehouse staff and production helpers for peak seasons.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="wrap">
-      <h2>About us</h2>
-      <p class="sub">A Filipino company built on reliable people.</p>
-      <div class="stats">
-        <div class="stat"><b>12</b><span>years in service</span></div>
-        <div class="stat"><b>850+</b><span>field staff deployed</span></div>
-        <div class="stat"><b>60</b><span>client sites</span></div>
-        <div class="stat"><b>24/7</b><span>operations desk</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="careers">
-    <div class="wrap join">
-      <div>
-        <h2>We are hiring</h2>
-        <p>Janitors, security guards, technicians and office staff. Apply online in a few minutes and track your application from your phone.</p>
-      </div>
-      <a class="btn" href="https://careers.lhmultiservices.com/">View open jobs</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <p class="sub">Pasig City, Metro Manila, Philippines</p>
-      <div class="grid">
-        <div class="card"><h3>Clients</h3><p>Ask for a site visit and a quote within two working days.</p></div>
-        <div class="card"><h3>Applicants</h3><p>All hiring is online. Visit our <a href="https://careers.lhmultiservices.com/">careers page</a>.</p></div>
+  <section id="book">
+    <div class="wrap contact">
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Demo site: request not sent';">
+        <h2 style="margin:0">Book a visit</h2>
+        <label>Your name<input type="text" autocomplete="name"></label>
+        <label>Service<select><option>Landscaping and garden care</option><option>Pest control</option><option>Aircon cleaning and repair</option><option>Plumbing and electrical</option><option>House and office cleaning</option><option>Painting and small renovation</option><option>Pool cleaning</option><option>Roof and gutter cleaning</option></select></label>
+        <label>Area<input type="text" placeholder="e.g. Marikina"></label>
+        <label>What needs doing?<textarea rows="3"></textarea></label>
+        <button type="submit">Request a visit</button>
+      </form>
+      <div class="info">
+        <b>Contact</b>
+        <span>Pasig City, Metro Manila</span>
+        <span>Phone and Viber: [NUMBER]</span>
+        <span>Mon to Sat, 8:00 AM to 6:00 PM</span>
       </div>
     </div>
   </section>
