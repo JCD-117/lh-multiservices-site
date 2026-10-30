@@ -25,7 +25,7 @@ h1{font-size:clamp(38px,7vw,64px);line-height:1.03;font-weight:800;margin:0 0 24
 .lead{margin:0;font-size:19px;max-width:54ch;color:#3b3a36}
 .btn{display:inline-block;text-decoration:none;background:var(--ink);color:var(--bg);padding:15px 24px;font-weight:600}
 .btn.light{background:#fff;color:var(--ink)}
-.photo{height:340px;background:linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)),#cfd8c4;display:flex;align-items:center;justify-content:center;color:#55604c;font-size:15px}
+.photo{display:block;width:100%;height:clamp(220px,38vw,420px);object-fit:cover;object-position:center 60%;background:#cfd8c4}
 section{padding:56px 0}
 h2{font-size:34px;font-weight:800;margin:0 0 8px}
 .sub{margin:0 0 28px;color:var(--soft)}
@@ -82,7 +82,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;
       <p class="lead">Garden, pests, aircon, pipes, wiring, cleaning and repairs for homes, subdivisions, condos and small offices in east Metro Manila.</p>
       <a class="btn" href="#book">Book a visit</a>
     </div>
-    <div class="photo">[PHOTO: our crew trimming a garden]</div>
+    <img class="photo" src="hero.jpg" width="1600" height="900" alt="A gardener in a straw hat watering flowering plants on a sunny day">
   </div>
 
   <section id="services" class="white">
